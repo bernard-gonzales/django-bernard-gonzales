@@ -1,0 +1,15 @@
+{% load static %}
+{% load bootstrap5 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<div class="form-group">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <br>
+        <input type="submit" value="Save" class="btn btn-primary">
+    </form>
+</div>

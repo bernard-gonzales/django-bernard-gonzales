@@ -5,3 +5,12 @@ li a {
 body {
     background: white url("meme.jpg") no-repeat;
 }
+
+div.container {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}

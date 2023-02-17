@@ -29,7 +29,7 @@ class Choice(models.Model):
         return self.choice_text
 
 
-class Comments(models.Model):
+class Comment(models.Model):
     title = models.CharField(max_length=30)
     comment_text = models.CharField(max_length=200)
     def __str__(self):
